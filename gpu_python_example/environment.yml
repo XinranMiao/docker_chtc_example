@@ -1,0 +1,17 @@
+name: example-environment
+channels:
+  - conda-forge
+  - pytorch
+  - anaconda
+dependencies:
+  - python
+  - numpy
+  - cudatoolkit=10.2
+  - pandas
+  - scikit-learn 
+  - matplotlib
+  - pytorch
+  - torchvision
+  - pip
+  - pip:
+    - torch
