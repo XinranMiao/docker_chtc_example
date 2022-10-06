@@ -1,0 +1,17 @@
+universe = docker
+docker_image = xinranmiao/r_example:20221006
+log = /home/xmiao27/logs/r_example.log
+error = /home/xmiao27/logs/r_example.err
+output = /home/xmiao27/logs/r_example.out
+
+executable = r_example.sh
+
+
+
+#request_cpus = 1
+#request_memory = 2GB
+request_disk = 1GB
+
+
+queue
+
