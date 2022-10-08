@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.4.0-base-ubuntu20.04
+FROM nvidia/cuda:10.2-base-ubuntu18.04
 
 # Add some dependencies
 RUN apt-get clean \

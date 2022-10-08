@@ -1,3 +1,4 @@
+#xinranmiao/r_example:20221006
 FROM rocker/tidyverse
 
 RUN apt-get update
