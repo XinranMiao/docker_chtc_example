@@ -1,7 +1,9 @@
 # docker_chtc_example
 
 ## Write a Dockerfile
+[R example](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/Dockerfile)
 
+[pytorch-cuda example 1](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/Dockerfile), [pytorch-cuda example 2]()
 ## Create a docker image 
 ```{bash}
 # cd to the directory containing a `Dockerfile`
