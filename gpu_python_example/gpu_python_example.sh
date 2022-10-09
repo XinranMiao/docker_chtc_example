@@ -1,4 +1,5 @@
-source /opt/miniconda/bin/activate
-conda activate example-environment
+source /home/xmiao27/miniconda3/bin/activate
+eval "$(conda shell.bash hook)"
+conda activate example
 
-python3 gpu.py
+python3 -c "import torch;print(torch.cuda.is_available())"
