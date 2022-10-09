@@ -4,11 +4,7 @@ log = /home/xmiao27/logs/ex2.log
 error = /home/xmiao27/logs/ex2.err
 output = /home/xmiao27/logs/ex2.err
 
-#executable = example2.sh
-
-#should_transfer_files = YES
-#when_to_transfer_output = ON_EXIT
-#transfer_input_files = gpu.py
+executable = example2.sh
 
 
 request_cpus = 1
@@ -19,7 +15,7 @@ request_gpus = 1
 +WantGPULab = true
 +GPUJobLength = "short"
 
-requirements =(has_avx == true) && (CUDACapability >= 6)
+requirements = (has_avx == true) && (CUDACapability >= 6)
 
 
 queue
