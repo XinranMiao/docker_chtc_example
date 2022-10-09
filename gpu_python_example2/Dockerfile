@@ -17,3 +17,6 @@ COPY environment.yml .
 RUN . /opt/miniconda/bin/activate \
   && conda env create -f environment.yml\
   && rm environment.yml
+
+# This image has been pushed as
+# xinranmiao/gpu_python_example:2022100903
