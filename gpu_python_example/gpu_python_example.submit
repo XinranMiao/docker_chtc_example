@@ -4,7 +4,7 @@ log = /home/xmiao27/logs/gpu.log
 error = /home/xmiao27/logs/gpu.err
 output = /home/xmiao27/logs/gpu.err
 
-# executable = gpu_python_example.sh
+executable = gpu_python_example.sh
 
 
 

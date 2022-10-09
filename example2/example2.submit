@@ -1,5 +1,5 @@
 universe = docker
-docker_image = xinranmiao/gpu_python_example:2022100902
+docker_image = xinranmiao/gpu_python_example:2022100903
 log = /home/xmiao27/logs/ex2.log
 error = /home/xmiao27/logs/ex2.err
 output = /home/xmiao27/logs/ex2.err
