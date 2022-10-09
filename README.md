@@ -1,9 +1,19 @@
 # docker_chtc_example
 
-## Write a Dockerfile
-[R example](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/Dockerfile)
+## Toy examples
 
-[pytorch-cuda example 1](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/Dockerfile), [pytorch-cuda example 2]()
+R example: [Dockerfile](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/Dockerfile), [CHTC submit file](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/r_example.submit), [CHTC shell script](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/r_example.sh)
+
+pytorch-cuda example: [Dockerfile](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/Dockerfile), [environment configuration](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/environment.yml), [CHTC submit file](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/gpu_python_example.submit), [CHTC shell script](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example/gpu_python_example.sh)
+
+
+pytorch-cuda example 2: [Dockerfile](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example2/Dockerfile), [environment configuration](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example2/environment.yml), [CHTC submit file](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example2/example2.submit), [CHTC shell script](https://github.com/XinranMiao/docker_chtc_example/blob/main/gpu_python_example2/example2.sh)
+
+## Write a Dockerfile
+
+[Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
+
 ## Create a docker image 
 ```{bash}
 # cd to the directory containing a `Dockerfile`
@@ -18,7 +28,7 @@ docker run --rm=true {repository name}:{tag} /bin/bash
 docker push {repository name}:{tag} 
 ```
 
-## Useful commands
+## Other useful commands
 ```{bash}
 # list all images
 docker image ls
