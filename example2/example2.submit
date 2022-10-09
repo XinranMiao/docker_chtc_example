@@ -1,20 +1,23 @@
 universe = docker
-docker_image = xinranmiao/gpu_python_example:20221006
-log = /home/xmiao27/logs/gpu.log
-error = /home/xmiao27/logs/gpu.err
-output = /home/xmiao27/logs/gpu.err
+docker_image = xinranmiao/gpu_python_example:2022100902
+log = /home/xmiao27/logs/ex2.log
+error = /home/xmiao27/logs/ex2.err
+output = /home/xmiao27/logs/ex2.err
 
-executable = gpu_python_example.sh
+#executable = example2.sh
 
-should_transfer_files = YES
-when_to_transfer_output = ON_EXIT
-transfer_input_files = gpu.py
+#should_transfer_files = YES
+#when_to_transfer_output = ON_EXIT
+#transfer_input_files = gpu.py
 
 
 request_cpus = 1
-request_memory = 2GB
-request_disk = 3GB
+request_memory = 500MB
+request_disk = 2GB
+
 request_gpus = 1
++WantGPULab = true
++GPUJobLength = "short"
 
 requirements =(has_avx == true) && (CUDACapability >= 6)
 

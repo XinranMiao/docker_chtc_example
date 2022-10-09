@@ -4,15 +4,19 @@ log = /home/xmiao27/logs/gpu.log
 error = /home/xmiao27/logs/gpu.err
 output = /home/xmiao27/logs/gpu.err
 
-executable = gpu_python_example.sh
+# executable = gpu_python_example.sh
 
 
 
 request_cpus = 1
-request_memory = 2GB
+request_memory = 500MB
 request_disk = 3GB
-request_gpus = 1
 
+
+
+request_gpus = 1
++WantGPULab = true
++GPUJobLength = "short"
 requirements =(has_avx == true) && (CUDACapability >= 6)
 
 
