@@ -21,7 +21,7 @@ docker build -t {repository name}:{tag} .
 # docker build -t xinranmiao/r_example:20221006 .
 
 # test this image
-docker run --rm=true {repository name}:{tag} /bin/bash
+docker run -it --rm=true {repository name}:{tag} /bin/bash
 # docker run -it --rm=true xinranmiao/r_example:20221006 /bin/bash
 
 # push
