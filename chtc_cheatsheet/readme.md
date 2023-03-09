@@ -4,6 +4,17 @@ log-in
 ssh username@submit.chtc.wisc.edu
 # or submit2.chtc.wisc.edu
 ```
+transfer files from your local machines and chtc
+```{bash}
+# from one's laptop to chtc
+scp local/directory/file username@submit2.chtc.wisc.edu:file
+# for example,
+# scp ~/Downloads/test.sub xmiao27@submit2.chtc.wisc.edu:.
+
+# from chtc to one's laptop
+scp username@submit2.chtc.wisc.edu:remote/directory/file .
+```
+
 
 jobs
 ```{bash}
