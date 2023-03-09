@@ -13,7 +13,7 @@ condor_submit r-example.sub
 # check all my jobs in queue
 condor_q 
 
-# analyze a job (why a job keeps idle
+# analyze a job (why a job keeps idle)
 condor_q -better-analyze 9644580 
 
 # log into a job
