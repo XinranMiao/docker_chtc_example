@@ -2,7 +2,7 @@ universe = docker
 docker_image = xinranmiao/r_example:20221006
 log = /home/xmiao27/logs/chtc_example$(job_id).log
 error = /home/xmiao27/logs/chtc_example$(job_id).err
-output = /home/xmiao27/logs/chtc_example$(job_id).err
+output = /home/xmiao27/logs/chtc_example$(job_id).out
 
 
 
